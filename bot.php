@@ -168,8 +168,8 @@ class TelegramBot {
         
         // Handle document uploads
         if (isset($message['document'])) {
-            $this->handleDocument($chat_id, $message['document'], $user_id, $username);
-            return;
+           // $this->handleDocument($chat_id, $message['document'], $user_id, $username);
+          // return;
         }
         
         // Handle photos
