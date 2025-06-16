@@ -8,7 +8,7 @@
 require_once 'logger.php';
 
 // Bot configuration
-define('BOT_TOKEN', getenv('BOT_TOKEN') ?: '8057624959:AAF8dF0u7Oio4_bk9Xu0oQcURlmRIZ9U6A4');
+define('BOT_TOKEN', getenv('BOT_TOKEN') ?: '7806200256:AAG_ODhxIaJ25x70PlWLrisdgGV9wf-8ZAM');
 define('BOT_USERNAME', getenv('BOT_USERNAME') ?: 'YourBotUsername');
 
 // Replit URL configuration
