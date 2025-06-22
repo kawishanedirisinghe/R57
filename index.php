@@ -25,6 +25,46 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $path = parse_url($request_uri, PHP_URL_PATH);
 
 // Handle different routes
+if ($method === 'POST' && $path === '/webhook') {
+    // Webhook endpoint for Telegram
+    try {
+        $input = file_get_contents('php://input');
+        $update = json_decode($input, true);
+        
+        if ($update) {
+            $bot = new TelegramBot();
+            $bot->processUpdate($update);
+            
+            // Send immediate response to Telegram
+            http_response_code(200);
+            header('Content-Type: application/json');
+            echo json_encode(['ok' => true]);
+            exit;
+        } else {
+            http_response_code(400);
+            echo json_encode(['error' => 'Invalid JSON']);
+            exit;
+        }
+    } catch (Exception $e) {
+        Logger::error("Webhook error: " . $e->getMessage());
+        http_response_code(500);
+        echo json_encode(['error' => 'Internal server error']);
+        exit;
+    }
+} elseif ($method === 'GET' && $path === '/setup') {
+    // Setup page
+    require_once 'setup_webhook.php';
+    exit;
+} elseif ($method === 'GET' && ($path === '/' || $path === '/index.php')) {
+    // Main web interface
+    require_once 'web_interface.php';
+    exit;
+} else {
+    // 404 for other routes
+    http_response_code(404);
+    echo "404 - Page not found";
+    exit;
+}
 switch ($path) {
     case '/':
         // Root endpoint - show web interface
