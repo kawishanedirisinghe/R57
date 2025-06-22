@@ -511,5 +511,851 @@
         "message_length": 5,
         "message_preview": "Hello",
         "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 03:41:45",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 03:44:57",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 03:44:58",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 03:44:59",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:18:32",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 31,
+        "message_preview": "\/search Sri Lanka attractions 5",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:18:44",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/search Sri Lanka attractions 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:19:23",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:19:29",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/query [question]",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:19:40",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 12,
+        "message_preview": "\/searchstats",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:21:06",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 36,
+        "message_preview": "\/query tell me about ravana history?",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:21:11",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:21:17",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 28,
+        "message_preview": "\/search Sri Lanka tourism 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:23:24",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 40,
+        "message_preview": "\/search ravan place Sri Lanka tourism 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:24:15",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:24:45",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 12,
+        "message_preview": "\/query ravan",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:25:23",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:26:43",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 12,
+        "message_preview": "\/query ravan",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 04:27:31",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/search ravan place Sri Lanka 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:45:51",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:46:44",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 70,
+        "message_preview": "\/enhancedsearch ravana sri lanka | Legendary King of Ancient Sri Lanka",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:46:57",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 70,
+        "message_preview": "\/enhancedsearch ravana sri lanka | Legendary King of Ancient Sri Lanka",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:50:25",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 70,
+        "message_preview": "\/enhancedsearch ravana sri lanka | Legendary King of Ancient Sri Lanka",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:03",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 70,
+        "message_preview": "\/enhancedsearch ravana sri lanka | Legendary King of Ancient Sri Lanka",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:06",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:11",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 21,
+        "message_preview": "\/search [query] [num]",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:18",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search [query] 1",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:33",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 8,
+        "message_preview": "\/queryhi",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:43",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 9,
+        "message_preview": "\/query hi",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:53",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:52:57",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 28,
+        "message_preview": "\/search Sri Lanka tourism 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:53:14",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 16,
+        "message_preview": "\/search ravana 1",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:53:37",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/enhancedsearch ranava | sinhala",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:53:50",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/enhancedsearch ranava | sinhala",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:53:51",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/enhancedsearch ranava | sinhala",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:54:32",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/enhancedsearch ranava | sinhala",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:57:26",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/enhancedsearch ranava | sinhala",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:58:20",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 05:58:24",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 28,
+        "message_preview": "\/search Sri Lanka tourism 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:03:02",
+        "user_id": 123456,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 26,
+        "message_preview": "\/search ravana sri lanka 3",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:04:48",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 28,
+        "message_preview": "\/search Sri Lanka tourism 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:05:13",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/enhancedsearch ranava | sinhala",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:06:09",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 9,
+        "message_preview": "\/query hi",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:06:18",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 14,
+        "message_preview": "\/search ravana",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:06:33",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 16,
+        "message_preview": "\/search ravana 1",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:07:24",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:27:49",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 16,
+        "message_preview": "\/search ravana 1",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:28:39",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:38:20",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:39:38",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 06:42:49",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:01:02",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:08:57",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:11:49",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:16:08",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 17,
+        "message_preview": "\/search ravana 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:26",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:27",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:28",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:29",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:30",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:31",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/search",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:32",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/starrt",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:33",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:34",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:35",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:36",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:37",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/menu",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:38",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:38",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:39",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:40",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:17:49",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:19:20",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 24,
+        "message_preview": "\/search ravana sinhala 1",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:19:45",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 25,
+        "message_preview": "\/search ravana sinhala 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:20:56",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 25,
+        "message_preview": "\/search ravana sinhala 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:22:00",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 25,
+        "message_preview": "\/search ravana sinhala 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:28:41",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 25,
+        "message_preview": "\/search ravana sinhala 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:31:08",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 25,
+        "message_preview": "\/search ravana sinhala 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:31:54",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:00",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:01",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 24,
+        "message_preview": "\/search ravana sinhala 1",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:09",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 2,
+        "message_preview": "\/q",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:10",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 2,
+        "message_preview": "\/q",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:23",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 7,
+        "message_preview": "\/starrt",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:27",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:36:56",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 32,
+        "message_preview": "\/search sri lanka anuradapurya 2",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:37:43",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 33,
+        "message_preview": "\/search sri lanka anuradapurya 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:38:52",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 33,
+        "message_preview": "\/search sri lanka anuradapurya 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:40:00",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 33,
+        "message_preview": "\/search sri lanka anuradapurya 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:47:57",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:48:16",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 33,
+        "message_preview": "\/search sri lanka anuradapurya 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:49:25",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:51:23",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 33,
+        "message_preview": "\/search sri lanka anuradapurya 10",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:52:34",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 6,
+        "message_preview": "\/start",
+        "session_id": ""
+    },
+    {
+        "timestamp": "2025-06-22 07:53:18",
+        "user_id": 7600577292,
+        "username": "Unknown",
+        "message_type": "command",
+        "message_length": 5,
+        "message_preview": "\/data",
+        "session_id": ""
     }
 ]

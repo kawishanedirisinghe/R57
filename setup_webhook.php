@@ -4,12 +4,28 @@
  * Automatically configures the webhook URL for the bot
  */
 
+// Clean any output buffer to prevent header issues
+while (ob_get_level()) {
+    ob_end_clean();
+}
+
+// Start output buffering
+ob_start();
+
+// Prevent any output before headers
+error_reporting(0);
+ini_set('display_errors', 0);
+
 require_once 'logger.php';
 require_once 'config.php';
 require_once 'ai_training.php';
 require_once 'bot.php';
 
-header('Content-Type: application/json');
+// Set headers after all includes
+if (!headers_sent()) {
+    header('Content-Type: application/json');
+    header('Cache-Control: no-cache, must-revalidate');
+}
 
 try {
     $bot = new TelegramBot();

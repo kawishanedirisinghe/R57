@@ -4,7 +4,11 @@
  * Chat-based interface for data collection and interaction
  */
 
-session_start();
+// Start session only if not already started and no headers sent
+if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
+    session_start();
+}
+
 require_once 'logger.php';
 require_once 'config.php';
 require_once 'ai_training.php';
