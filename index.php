@@ -1,6 +1,6 @@
 
 <?php
-set_time_limit(86409);
+set_time_limit(3609);
 
 /**
  * Main entry point for the Telegram bot on Replit
