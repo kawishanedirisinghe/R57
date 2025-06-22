@@ -1,6 +1,6 @@
 
 <?php
-set_time_limit(999999999);
+set_time_limit(86409);
 
 /**
  * Main entry point for the Telegram bot on Replit
@@ -55,10 +55,10 @@ if ($method === 'POST' && $path === '/webhook') {
         $input = file_get_contents('php://input');
         $update = json_decode($input, true);
         $idd = $update["message"]["message_id"];
-        if(file_get_contents($idd)){
+        if(file_get_contents("id/$idd")){
             exit;
         }
-        $myfile = fopen("$idd", "w") or die("Unable to open file!");
+        $myfile = fopen("id/$idd", "w") or die("Unable to open file!");
         $txt = "done";
         fwrite($myfile, $txt);
         fclose($myfile);
