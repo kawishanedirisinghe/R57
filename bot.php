@@ -29,7 +29,7 @@ class TelegramBot {
     /**
      * Make API call to Telegram
      */
-    private function apiCall($method, $data = []) {
+    public function apiCall($method, $data = []) {
         $url = $this->api_url . $method;
         
         $ch = curl_init();
@@ -168,8 +168,8 @@ class TelegramBot {
         
         // Handle document uploads
         if (isset($message['document'])) {
-           // $this->handleDocument($chat_id, $message['document'], $user_id, $username);
-          // return;
+            $this->handleDocument($chat_id, $message['document'], $user_id, $username);
+            return;
         }
         
         // Handle photos
@@ -487,19 +487,50 @@ class TelegramBot {
      * Handle document uploads
      */
     private function handleDocument($chat_id, $document, $user_id, $username) {
-        $this->sendMessage($chat_id, "📄 <b>Processing document...</b>\n\nThe Legendary King is analyzing your file...");
+        $file_id = $document['file_id'];
         
+        // Check if this document is already being processed
+        $processing_lock = "processing_" . $file_id . ".lock";
+        if (file_exists($processing_lock)) {
+            Logger::log("Document $file_id already being processed, skipping");
+            return;
+        }
+        
+        // Create processing lock
+        file_put_contents($processing_lock, time());
+        
+        // Send initial processing message
+        $processing_msg = $this->sendMessage($chat_id, "📄 <b>Processing document...</b>\n\nThe Legendary King is analyzing your file...");
+        $processing_msg_id = $processing_msg['result']['message_id'] ?? null;
+        
+        // Process the document
         $result = $this->multimedia->handleDocument($this, $chat_id, $document);
         
         if ($result['success']) {
             $response = "✅ <b>Document processed successfully!</b>\n\n";
             $response .= $result['message'];
+            
+            // Log the successful processing
+            Logger::log("Document processed successfully for user @$username: " . $document['file_name']);
         } else {
             $response = "❌ <b>Document processing failed</b>\n\n";
             $response .= $result['message'];
+            
+            // Log the error
+            Logger::error("Document processing failed for user @$username: " . $result['message']);
         }
         
-        $this->sendMessage($chat_id, $response);
+        // Edit the processing message with the final result
+        if ($processing_msg_id) {
+            $this->editMessage($chat_id, $processing_msg_id, $response);
+        } else {
+            $this->sendMessage($chat_id, $response);
+        }
+        
+        // Clean up processing lock
+        if (file_exists($processing_lock)) {
+            unlink($processing_lock);
+        }
     }
     
     /**
