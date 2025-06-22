@@ -38,8 +38,28 @@ class MultimediaHandler {
             
             Logger::log("Processing document: $file_name (Size: $file_size bytes)");
             
+            // Check file size limit (5MB)
+            if ($file_size > 5 * 1024 * 1024) {
+                return [
+                    'success' => false,
+                    'message' => "File too large. Maximum size is 5MB."
+                ];
+            }
+            
+            // Check for duplicate file based on file_id
+            $processed_file = 'processed_files.txt';
+            if (file_exists($processed_file)) {
+                $processed_ids = file_get_contents($processed_file);
+                if (strpos($processed_ids, $file_id) !== false) {
+                    return [
+                        'success' => false,
+                        'message' => "File already processed. Please upload a new file."
+                    ];
+                }
+            }
+            
             // Get file from Telegram
-            $file_info = $bot->apiCall('getFile', ['file_id' => $file_id]);
+            $file_info = $this->makeApiCall($bot, 'getFile', ['file_id' => $file_id]);
             
             if ($file_info['ok']) {
                 $file_path = $file_info['result']['file_path'];
@@ -49,6 +69,9 @@ class MultimediaHandler {
                 $file_content = file_get_contents($file_url);
                 $local_path = $this->upload_dir . $file_name;
                 file_put_contents($local_path, $file_content);
+                
+                // Mark file as processed
+                file_put_contents($processed_file, $file_id . "\n", FILE_APPEND);
                 
                 // Process based on file type
                 $result = $this->processFile($local_path, $file_name, $chat_id);
@@ -123,18 +146,33 @@ class MultimediaHandler {
         $lines = explode("\n", $content);
         
         $processed = 0;
+        $valid_lines = [];
+        
+        // Collect valid lines first
         foreach ($lines as $line) {
             $line = trim($line);
             if (!empty($line) && strlen($line) > 10) {
-                $result = $this->aiTraining->processTrainingData($line, 'data');
-                if ($result) {
-                    $this->aiTraining->saveTrainingData($result);
-                    $processed++;
-                }
+                $valid_lines[] = $line;
             }
         }
         
-        return "Processed $processed lines from text file";
+        // Process lines in batches to avoid overwhelming the system
+        $batch_size = 5; // Process 5 lines at a time
+        $batches = array_chunk($valid_lines, $batch_size);
+        
+        foreach ($batches as $batch) {
+            $batch_text = implode("\n", $batch);
+            $result = $this->aiTraining->processTrainingData($batch_text, 'data');
+            if ($result) {
+                $this->aiTraining->saveTrainingData($result);
+                $processed += count($batch);
+            }
+            
+            // Add a small delay between batches to prevent API rate limiting
+            usleep(500000); // 0.5 second delay
+        }
+        
+        return "Processed $processed lines from text file in " . count($batches) . " batches";
     }
     
     /**
@@ -200,6 +238,33 @@ class MultimediaHandler {
             'total_size' => $total_size,
             'total_size_mb' => round($total_size / 1024 / 1024, 2)
         ];
+    }
+    
+    /**
+     * Make API call through bot instance
+     */
+    private function makeApiCall($bot, $method, $data = []) {
+        if (method_exists($bot, 'apiCall')) {
+            return $bot->apiCall($method, $data);
+        }
+        
+        // Fallback to direct API call if needed
+        $url = "https://api.telegram.org/bot" . BOT_TOKEN . "/" . $method;
+        
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/json'
+        ]);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        return json_decode($response, true);
     }
     
     /**
